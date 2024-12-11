@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.8/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.8/theme/monokai.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text Editor</h1>
+        </header>
+
+        <div class="editors">
+            <div class="editor" id="html-editor-container">
+                <div class="editor-header">HTML</div>
+                <textarea id="html-editor" placeholder="Write HTML here..."></textarea>
+            </div>
+            <div class="editor" id="css-editor-container">
+                <div class="editor-header">CSS</div>
+                <textarea id="css-editor" placeholder="Write CSS here..."></textarea>
+            </div>
+            <div class="editor" id="js-editor-container">
+                <div class="editor-header">JavaScript</div>
+                <textarea id="js-editor" placeholder="Write JavaScript here..."></textarea>
+            </div>
+        </div>
+
+        <div class="run-container">
+            <div class="run-header">Run Window</div>
+            <div id="output" class="run-window"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.8/codemirror.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
